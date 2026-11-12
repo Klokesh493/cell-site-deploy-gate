@@ -2,7 +2,7 @@
 
 ## Business problem
 
-Blocks site deployments when maintenance windows, alarms, or neighbor-cell health are unsafe.
+A maintenance change should be held when a site has active alarms, insufficient healthy neighbors, or no approved maintenance window.
 
 ## Reproduce the workflow
 

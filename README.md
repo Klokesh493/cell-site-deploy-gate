@@ -22,6 +22,10 @@ python3 -m unittest discover . -v
 
 Run `make verify` with Make and Python 3 installed. The target runs the documented sample through the project CLI. It also runs the existing Python unit tests.
 
+## Business problem
+
+A maintenance change should be held when a site has active alarms, insufficient healthy neighbors, or no approved maintenance window.
+
 ## Project walkthrough
 
 ```mermaid
