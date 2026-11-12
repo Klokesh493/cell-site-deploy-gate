@@ -4,11 +4,14 @@ Blocks site deployments when maintenance windows, alarms, or neighbor-cell healt
 
 ```mermaid
 flowchart LR
-    N0["sample_sites.csv"]
-    N1["site_deploy_gate.py"]
-    N2["decision"]
-    N3["Result for operator review"]
-    N0 --> N1 --> N2 --> N3
+    A["Site maintenance snapshot"]
+    B["Check maintenance window, active alarms, and healthy neighbors"]
+    C{"All three gates pass?"}
+    D["Allow deployment recommendation"]
+    E["Block deployment recommendation"]
+    A --> B --> C
+    C -->|Yes| D
+    C -->|No| E
 ```
 
 ## Operational boundaries
