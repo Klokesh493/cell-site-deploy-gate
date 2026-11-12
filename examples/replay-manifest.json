@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Demo 1",
+    "args": [
+      "site_deploy_gate.py",
+      "sample_sites.csv"
+    ],
+    "expected": "examples/Demo 1.stdout.txt"
+  },
+  {
+    "name": "Last sample record in isolation",
+    "args": [
+      "site_deploy_gate.py",
+      "examples/last-record.csv"
+    ],
+    "expected": "examples/Last sample record in isolation.stdout.txt"
+  }
+]
